@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#03045e</color>
+    <color name="home_button_color">#00b4d8</color>
+
+
+    <color name="purple">#5247C5</color>
+    <color name="green">#64DD17</color>
+    <color name="blue">#03A9F4</color>
+    <color name="background">#5247C5</color>
+
+    <color name="indigo_200">#FF9FA8DA</color>
+    <color name="indigo_500">#FF3F51B5</color>
+    <color name="indigo_800">#FF283593</color>
+    <color name="light_blue_200">#FF81D4FA</color>
+    <color name="light_blue_700">#FF0288D1</color>
+    <color name="red_700">#FFD32F2F</color>
+    <color name="red_400">#FFEF5350</color>
+
+    <color name="colorButton">#FF5722</color>
+    <color name="btn_red">#EF5350</color>
+    <color name="yellow">#F9A825</color>
+    <color name="btn_white">#D9D9D9</color>
+</resources>
