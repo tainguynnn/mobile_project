@@ -11,6 +11,16 @@
 
         <!-- TODO: Update blank fragment layout -->
 
+        <ImageView
+            android:id="@+id/howtoplay"
+            android:layout_width="68dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="332dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/question_mark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
@@ -19,7 +29,6 @@
             android:layout_marginBottom="36dp"
             android:background="@drawable/bg_round"
             android:text="braintrain appication"
-
             android:textColor="@color/primary"
             android:textSize="30sp"
             android:textStyle="bold"

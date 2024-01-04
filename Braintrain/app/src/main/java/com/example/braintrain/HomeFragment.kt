@@ -25,6 +25,10 @@ class HomeFragment : Fragment() {
             it.findNavController().navigate(R.id.action_homeFragment_to_memoryGameFragment)
         }
 
+        binding.howtoplay.setOnClickListener{
+            it.findNavController().navigate(R.id.action_homeFragment_to_guideFragment)
+        }
+
         binding.btnLanguage.setOnClickListener{
             it.findNavController().navigate(R.id.action_homeFragment_to_languageGameFragment)
         }
@@ -33,7 +37,9 @@ class HomeFragment : Fragment() {
             it.findNavController().navigate(R.id.action_homeFragment_to_mathGameFragment)
         }
 
-
+        binding.btnAttention.setOnClickListener{
+            it.findNavController().navigate(R.id.action_homeFragment_to_attentionGameFragment)
+        }
 
 
 

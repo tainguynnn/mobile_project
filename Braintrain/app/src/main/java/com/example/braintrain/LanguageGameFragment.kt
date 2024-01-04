@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.example.braintrain.databinding.FragmentLanguageGameBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
@@ -80,8 +81,11 @@ class LanguageGameFragment : Fragment() {
             .setTitle(getString(R.string.congratulations))
             .setMessage(getString(R.string.you_scored, viewModel.score.value))
             .setCancelable(false)
-            .setPositiveButton("close") { _, _ ->
+            .setPositiveButton("try again") { _, _ ->
                 restartGame()
+            }
+            .setNegativeButton(getString(R.string.exit)) { _, _ ->
+                findNavController().navigate(R.id.action_languageGameFragment_to_homeFragment)
             }
             .show()
     }
@@ -98,9 +102,9 @@ class LanguageGameFragment : Fragment() {
     /*
      * Exits the game.
      */
-//    private fun exitGame() {
-//        activity?.finish()
-//    }
+    private fun exitGame() {
+        activity?.finish()
+    }
 
 
 

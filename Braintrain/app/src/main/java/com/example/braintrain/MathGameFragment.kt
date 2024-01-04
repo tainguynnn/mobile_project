@@ -13,6 +13,7 @@ import androidx.core.widget.addTextChangedListener
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import com.example.braintrain.databinding.FragmentMathGameBinding
 import com.example.braintrain.databinding.DialogResultBinding
 import kotlinx.coroutines.Dispatchers
@@ -94,7 +95,10 @@ class MathGameFragment : Fragment() {
                     dialogBinding.apply {
                         // Show data in dialog
                         tvDialogScore.text = binding.tvScore.text
-
+                        btnClose.setOnClickListener {
+                            dialog.dismiss()
+                            findNavController().navigate(R.id.action_mathGameFragment_to_homeFragment)
+                        }
                         btnTryAgain.setOnClickListener {
                             dialog.dismiss()
                             binding.apply {

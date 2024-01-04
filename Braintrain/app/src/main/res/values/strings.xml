@@ -6,7 +6,6 @@
     <string name="or">Or</string>
 
 
-
     <string name="numbers_ncalculation_game">Numbers\nCalculation Game</string>
     <string name="_0">0</string>
     <string name="score">Score</string>
@@ -16,7 +15,6 @@
     <string name="your_score">Your Score</string>
     <string name="close">close</string>
     <string name="try_again">try again</string>
-
 
 
     <string name="instructions">Unscramble the word using all the letters.</string>

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/mainScreenFragment">
 
     <fragment
         android:id="@+id/homeFragment"
@@ -19,6 +19,12 @@
         <action
             android:id="@+id/action_homeFragment_to_mathGameFragment"
             app:destination="@id/mathGameFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_attentionGameFragment"
+            app:destination="@id/attentionGameFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_guideFragment"
+            app:destination="@id/guideFragment" />
     </fragment>
     <fragment
         android:id="@+id/languageGameFragment"
@@ -33,10 +39,33 @@
         android:id="@+id/mathGameFragment"
         android:name="com.example.braintrain.MathGameFragment"
         android:label="fragment_math_game"
-        tools:layout="@layout/fragment_math_game" />
+        tools:layout="@layout/fragment_math_game" >
+        <action
+            android:id="@+id/action_mathGameFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/memoryGameFragment"
         android:name="com.example.braintrain.MemoryGameFragment"
         android:label="fragment_memory_game"
         tools:layout="@layout/fragment_memory_game" />
+    <fragment
+        android:id="@+id/attentionGameFragment"
+        android:name="com.example.braintrain.AttentionGameFragment"
+        android:label="fragment_attention_game"
+        tools:layout="@layout/fragment_attention_game" />
+    <fragment
+        android:id="@+id/mainScreenFragment"
+        android:name="com.example.braintrain.MainScreenFragment"
+        android:label="fragment_main_screen"
+        tools:layout="@layout/fragment_main_screen" >
+        <action
+            android:id="@+id/action_mainScreenFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/guideFragment"
+        android:name="com.example.braintrain.GuideFragment"
+        android:label="fragment_guide"
+        tools:layout="@layout/fragment_guide" />
 </navigation>
