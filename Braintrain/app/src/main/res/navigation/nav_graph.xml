@@ -17,14 +17,17 @@
             android:id="@+id/action_homeFragment_to_memoryGameFragment"
             app:destination="@id/memoryGameFragment" />
         <action
-            android:id="@+id/action_homeFragment_to_mathGameFragment"
-            app:destination="@id/mathGameFragment" />
-        <action
             android:id="@+id/action_homeFragment_to_attentionGameFragment"
             app:destination="@id/attentionGameFragment" />
         <action
             android:id="@+id/action_homeFragment_to_guideFragment"
             app:destination="@id/guideFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_scoreFragment"
+            app:destination="@id/scoreFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_mathGameScreenFragment"
+            app:destination="@id/mathGameScreenFragment" />
     </fragment>
     <fragment
         android:id="@+id/languageGameFragment"
@@ -68,4 +71,26 @@
         android:name="com.example.braintrain.GuideFragment"
         android:label="fragment_guide"
         tools:layout="@layout/fragment_guide" />
+    <fragment
+        android:id="@+id/scoreFragment"
+        android:name="com.example.braintrain.ScoreFragment"
+        android:label="fragment_score"
+        tools:layout="@layout/fragment_score" />
+    <fragment
+        android:id="@+id/mathGameScreenFragment"
+        android:name="com.example.braintrain.MathGameScreenFragment"
+        android:label="fragment_math_game_screen"
+        tools:layout="@layout/fragment_math_game_screen" >
+        <action
+            android:id="@+id/action_mathGameScreenFragment_to_mathGameFragment"
+            app:destination="@id/mathGameFragment" />
+        <action
+            android:id="@+id/action_mathGameScreenFragment_to_mathGame2Fragment"
+            app:destination="@id/mathGame2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mathGame2Fragment"
+        android:name="com.example.braintrain.MathGame2Fragment"
+        android:label="fragment_math_game2"
+        tools:layout="@layout/fragment_math_game2" />
 </navigation>

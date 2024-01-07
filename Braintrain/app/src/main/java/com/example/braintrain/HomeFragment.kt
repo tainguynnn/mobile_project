@@ -34,14 +34,16 @@ class HomeFragment : Fragment() {
         }
 
         binding.btnMath.setOnClickListener{
-            it.findNavController().navigate(R.id.action_homeFragment_to_mathGameFragment)
+            it.findNavController().navigate(R.id.action_homeFragment_to_mathGameScreenFragment)
         }
 
         binding.btnAttention.setOnClickListener{
             it.findNavController().navigate(R.id.action_homeFragment_to_attentionGameFragment)
         }
 
-
+        binding.btnScores.setOnClickListener {
+            it.findNavController().navigate(R.id.action_homeFragment_to_scoreFragment)
+        }
 
         return binding.root
     }
