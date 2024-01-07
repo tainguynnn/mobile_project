@@ -22,7 +22,7 @@ class HomeFragment : Fragment() {
 
 
         binding.btnMemory.setOnClickListener{
-            it.findNavController().navigate(R.id.action_homeFragment_to_memoryGameFragment)
+            it.findNavController().navigate(R.id.action_homeFragment_to_memoryGameScreenFragment)
         }
 
         binding.howtoplay.setOnClickListener{

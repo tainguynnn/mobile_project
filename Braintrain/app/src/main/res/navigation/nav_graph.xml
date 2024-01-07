@@ -14,9 +14,6 @@
             android:id="@+id/action_homeFragment_to_languageGameFragment"
             app:destination="@id/languageGameFragment" />
         <action
-            android:id="@+id/action_homeFragment_to_memoryGameFragment"
-            app:destination="@id/memoryGameFragment" />
-        <action
             android:id="@+id/action_homeFragment_to_attentionGameFragment"
             app:destination="@id/attentionGameFragment" />
         <action
@@ -28,6 +25,9 @@
         <action
             android:id="@+id/action_homeFragment_to_mathGameScreenFragment"
             app:destination="@id/mathGameScreenFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_memoryGameScreenFragment"
+            app:destination="@id/memoryGameScreenFragment" />
     </fragment>
     <fragment
         android:id="@+id/languageGameFragment"
@@ -93,4 +93,21 @@
         android:name="com.example.braintrain.MathGame2Fragment"
         android:label="fragment_math_game2"
         tools:layout="@layout/fragment_math_game2" />
+    <fragment
+        android:id="@+id/memoryGame2Fragment"
+        android:name="com.example.braintrain.MemoryGame2Fragment"
+        android:label="fragment_memory_game2"
+        tools:layout="@layout/fragment_memory_game2" />
+    <fragment
+        android:id="@+id/memoryGameScreenFragment"
+        android:name="com.example.braintrain.MemoryGameScreenFragment"
+        android:label="fragment_memory_game_screen"
+        tools:layout="@layout/fragment_memory_game_screen" >
+        <action
+            android:id="@+id/action_memoryGameScreenFragment_to_memoryGame2Fragment"
+            app:destination="@id/memoryGame2Fragment" />
+        <action
+            android:id="@+id/action_memoryGameScreenFragment_to_memoryGameFragment"
+            app:destination="@id/memoryGameFragment" />
+    </fragment>
 </navigation>
