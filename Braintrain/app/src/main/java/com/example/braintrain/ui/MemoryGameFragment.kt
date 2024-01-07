@@ -1,4 +1,4 @@
-package com.example.braintrain
+package com.example.braintrain.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,6 +10,7 @@ import androidx.core.app.ActivityCompat
 import androidx.core.view.forEach
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
+import com.example.braintrain.R
 import com.example.braintrain.databinding.FragmentMemoryGameBinding
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch

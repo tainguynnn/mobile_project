@@ -1,4 +1,4 @@
-package com.example.braintrain
+package com.example.braintrain.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import com.example.braintrain.R
 import com.example.braintrain.databinding.FragmentAttentionGameBinding
 
 class AttentionGameFragment : Fragment() {
@@ -17,7 +18,8 @@ class AttentionGameFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_attention_game, container, false)
+        binding = DataBindingUtil.inflate(inflater,
+            R.layout.fragment_attention_game, container, false)
 
         setupClickListeners()
 

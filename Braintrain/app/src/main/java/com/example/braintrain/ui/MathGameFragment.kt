@@ -1,4 +1,4 @@
-package com.example.braintrain
+package com.example.braintrain.ui
 
 import android.annotation.SuppressLint
 import android.app.Dialog
@@ -14,12 +14,12 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
+import com.example.braintrain.R
 import com.example.braintrain.databinding.FragmentMathGameBinding
 import com.example.braintrain.databinding.DialogResultBinding
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.asFlow
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.onCompletion
 import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.launch

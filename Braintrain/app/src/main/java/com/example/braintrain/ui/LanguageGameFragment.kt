@@ -1,4 +1,4 @@
-package com.example.braintrain
+package com.example.braintrain.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,6 +8,9 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
+import com.example.braintrain.LanguageGameViewModel
+import com.example.braintrain.LanguageGame.MAX_NO_OF_WORDS
+import com.example.braintrain.R
 import com.example.braintrain.databinding.FragmentLanguageGameBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
@@ -21,7 +24,8 @@ class LanguageGameFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_language_game, container, false)
+        binding = DataBindingUtil.inflate(inflater,
+            R.layout.fragment_language_game, container, false)
         return binding.root
     }
 
@@ -84,9 +88,7 @@ class LanguageGameFragment : Fragment() {
             .setPositiveButton("try again") { _, _ ->
                 restartGame()
             }
-            .setNegativeButton(getString(R.string.exit)) { _, _ ->
-                findNavController().navigate(R.id.action_languageGameFragment_to_homeFragment)
-            }
+
             .show()
     }
 

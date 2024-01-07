@@ -8,6 +8,9 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
 import androidx.lifecycle.ViewModel
+import com.example.braintrain.LanguageGame.MAX_NO_OF_WORDS
+import com.example.braintrain.LanguageGame.SCORE_INCREASE
+import com.example.braintrain.LanguageGame.allWordsList
 
 class LanguageGameViewModel : ViewModel() {
     private val _score = MutableLiveData(0)

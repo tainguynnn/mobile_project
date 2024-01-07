@@ -1,4 +1,4 @@
-package com.example.braintrain
+package com.example.braintrain.ui
 
 import android.graphics.Color
 import android.os.Bundle
@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
+import com.example.braintrain.R
 import com.example.braintrain.databinding.FragmentMathGame2Binding
 import java.util.Random
 

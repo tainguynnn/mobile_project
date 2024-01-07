@@ -1,4 +1,4 @@
-package com.example.braintrain
+package com.example.braintrain.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
+import com.example.braintrain.R
 import com.example.braintrain.databinding.FragmentMainScreenBinding
 
 
@@ -21,7 +22,7 @@ class MainScreenFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = DataBindingUtil.inflate(inflater,R.layout.fragment_main_screen, container, false)
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_main_screen, container, false)
 
         binding.btnLogin.setOnClickListener{
             it.findNavController().navigate(R.id.action_mainScreenFragment_to_homeFragment)

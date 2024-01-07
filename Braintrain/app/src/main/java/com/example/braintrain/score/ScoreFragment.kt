@@ -1,4 +1,4 @@
-package com.example.braintrain
+package com.example.braintrain.score
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.braintrain.R
 import com.example.braintrain.databinding.FragmentScoreBinding
 
 

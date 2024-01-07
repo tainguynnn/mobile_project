@@ -1,4 +1,4 @@
-package com.example.braintrain
+package com.example.braintrain.ui
 
 import android.content.ContentValues.TAG
 import android.os.Bundle
@@ -9,6 +9,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.Toast
+import com.example.braintrain.MemoryGame2.MemoryCard
+import com.example.braintrain.R
 
 
 class MemoryGame2Fragment : Fragment() {
